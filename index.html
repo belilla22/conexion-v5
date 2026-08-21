@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CONEXIÓN ❤️ — Entre millones, una sola conexión</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#06091c;color:#fff}
+button{font:inherit}
+.page{min-height:100vh;background:
+radial-gradient(circle at 10% 18%,#ff1f7827,transparent 28%),
+radial-gradient(circle at 92% 15%,#1dbbe92b,transparent 25%),
+radial-gradient(circle at 50% 88%,#ff8b2622,transparent 30%),
+linear-gradient(135deg,#050817,#100d35 46%,#071d37)}
+header{height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid #ffffff16;background:#050817b8;backdrop-filter:blur(16px);position:sticky;top:0;z-index:20}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:25px;letter-spacing:-1px}
+.logoHeart{width:42px;height:42px;display:grid;place-items:center;border-radius:15px;background:conic-gradient(from 220deg,#ff277d,#ffb02f,#25c98b,#20c7e8,#7655ef,#ff277d);box-shadow:0 0 28px #ff277d55;font-size:24px}
+nav{display:flex;gap:8px}nav button{background:transparent;border:0;color:#cfd1e5;padding:9px 12px;border-radius:10px;cursor:pointer}nav button:hover{background:#ffffff0d;color:#fff}
+.account{display:flex;align-items:center;gap:10px}.mini{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#ff3b88,#7054e9);font-weight:800}
+.hero{padding:70px 6vw 45px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;max-width:1400px;margin:auto}
+.hero h1{font-size:64px;line-height:.98;margin:0 0 18px;letter-spacing:-3px}
+.gradientText{background:linear-gradient(90deg,#ff3c86,#ffb23e,#26d19a,#27c7ef,#8b6cff);-webkit-background-clip:text;color:transparent}
+.hero p{font-size:18px;color:#c5c7da;max-width:650px;line-height:1.6}.slogan{font-size:20px!important;color:#fff!important;font-weight:700}
+.cta{border:0;border-radius:14px;padding:14px 21px;color:#fff;font-weight:900;background:linear-gradient(90deg,#ff267d,#ff833b);box-shadow:0 12px 32px #ff267d3b;cursor:pointer}
+.ghost{margin-left:8px;border:1px solid #ffffff22;border-radius:14px;padding:14px 20px;background:#ffffff08;color:#fff;cursor:pointer}
+.globeHeart{height:360px;display:grid;place-items:center;position:relative}
+.globe{width:270px;height:270px;border-radius:50%;background:
+radial-gradient(circle at 34% 30%,#7df0ff 0 3%,transparent 4%),
+radial-gradient(circle at 65% 35%,#ffd457 0 4%,transparent 5%),
+radial-gradient(circle at 47% 68%,#35d78c 0 6%,transparent 7%),
+linear-gradient(145deg,#20c7ef,#7055eb 48%,#ff3b86);box-shadow:0 0 90px #7047e866, inset -30px -35px 70px #080a25;position:relative}
+.globe:before{content:"";position:absolute;inset:15px;border-radius:50%;border:1px solid #ffffff38;box-shadow:inset 25px 0 #ffffff0a}
+.bigHeart{position:absolute;font-size:190px;line-height:1;color:#ff4b91;text-shadow:0 0 30px #ff2f7d99;filter:drop-shadow(0 15px 25px #0008)}
+.orbit{position:absolute;width:370px;height:135px;border:3px solid #ff3c86aa;border-radius:50%;transform:rotate(-20deg)}.orbit.two{border-color:#28c9e5aa;transform:rotate(20deg)}
+.worldDots{position:absolute;inset:0}.dot{position:absolute;width:13px;height:13px;border-radius:50%;box-shadow:0 0 18px currentColor}
+.dot.a{left:10%;top:25%;color:#ff4c86;background:#ff4c86}.dot.b{right:9%;top:31%;color:#25c9e9;background:#25c9e9}.dot.c{left:21%;bottom:17%;color:#ffbd43;background:#ffbd43}.dot.d{right:20%;bottom:21%;color:#36d38d;background:#36d38d}
+.section{max-width:1400px;margin:auto;padding:28px 6vw 62px}.section h2{font-size:30px;margin:0 0 20px}.subtitle{color:#aeb0c6;margin-top:-10px;margin-bottom:24px}
+.categories{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}.cat{padding:16px 8px;border-radius:18px;text-align:center;border:1px solid #ffffff14;background:#ffffff08}.cat .icon{width:54px;height:54px;margin:0 auto 9px;border-radius:50%;display:grid;place-items:center;font-size:25px}.cat b{font-size:12px}.c1{background:#ff397f}.c2{background:#38bdf0}.c3{background:#27ca87}.c4{background:#ef4fa1}.c5{background:#ffb52f}.c6{background:#7a57ef}.c7{background:#ff9b2e}.c8{background:#1ec7d6}
+.discover{display:grid;grid-template-columns:1.4fr .6fr;gap:20px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border-radius:22px;overflow:hidden;background:#ffffff0b;border:1px solid #ffffff14}.photo{height:235px;display:grid;place-items:center;font-size:78px;position:relative}.badge{position:absolute;right:12px;top:12px;background:#07091dcc;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:900}.cardBody{padding:15px}.cardBody h3{margin:0;font-size:19px}.muted{color:#aeb0c4;font-size:12px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.chips span{background:#ffffff0d;border:1px solid #ffffff0c;border-radius:999px;padding:5px 8px;font-size:11px}.actions{display:flex;gap:7px}.actions button{flex:1;border:0;border-radius:10px;padding:10px;cursor:pointer;font-weight:800}.like{background:linear-gradient(90deg,#ff287e,#ff784a);color:#fff}.view{background:#ffffff0e;color:#fff}
+.sideCard{border-radius:22px;padding:22px;background:linear-gradient(145deg,#ff267d1c,#7054e91e);border:1px solid #ffffff16}.score{width:150px;height:150px;margin:20px auto;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#ff3d88 0 88%,#ffffff12 88%);position:relative}.score:after{content:"";position:absolute;inset:11px;border-radius:50%;background:#111034}.score strong{position:relative;z-index:1;font-size:32px}.score small{position:absolute;z-index:1;transform:translateY(30px);color:#bbbdd2}
+.world{display:grid;grid-template-columns:1fr 1fr;gap:18px}.continent{padding:20px;border-radius:20px;min-height:150px;border:1px solid #ffffff14;position:relative;overflow:hidden}.continent:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-55px;top:-70px;background:currentColor;opacity:.12}.eu{color:#39a9ff}.am{color:#ff657f}.as{color:#ffc84b}.af{color:#3bd58e}.oc{color:#2bc9e8}
+.moments{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.moment{border-radius:20px;padding:18px;background:#ffffff09;border:1px solid #ffffff14}.moment strong{display:block;margin-bottom:7px}.moment p{color:#c3c5d7;line-height:1.45}
+.premium{padding:34px;border-radius:26px;background:linear-gradient(110deg,#ff287d25,#7054e936,#1fc7e51c);border:1px solid #ffffff17;display:flex;justify-content:space-between;gap:25px;align-items:center}.premium h2{margin:0 0 8px}.price{font-size:36px;font-weight:900;background:linear-gradient(90deg,#ff4b91,#ffbd43);-webkit-background-clip:text;color:transparent}.premium ul{margin:12px 0 0;padding-left:20px;color:#c7c9d9;line-height:1.7}.premium button{border:0;border-radius:13px;padding:14px 20px;background:linear-gradient(90deg,#ff267d,#ff8a38);color:#fff;font-weight:900;cursor:pointer;white-space:nowrap}
+footer{padding:35px 6vw;color:#888ba4;text-align:center;border-top:1px solid #ffffff0d}
+@media(max-width:1000px){.hero{grid-template-columns:1fr}.categories{grid-template-columns:repeat(4,1fr)}.discover{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){header{padding:0 18px}nav{display:none}.hero{padding:45px 20px 25px}.hero h1{font-size:43px}.section{padding:25px 20px 45px}.categories{grid-template-columns:repeat(2,1fr)}.cards,.moments,.world{grid-template-columns:1fr}.globeHeart{height:300px}.globe{width:210px;height:210px}.bigHeart{font-size:150px}.orbit{width:290px}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+.authModal{position:fixed;inset:0;background:#050817d9;backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;z-index:99;padding:20px}.authBox{width:min(430px,100%);background:#11142f;border:1px solid #ffffff1c;border-radius:24px;padding:26px;box-shadow:0 25px 80px #0009}.authBox h2{margin-top:0}.authBox input{width:100%;padding:13px 14px;margin:7px 0;border-radius:12px;border:1px solid #ffffff18;background:#ffffff0a;color:#fff;outline:none}.authBox .row{display:flex;gap:8px;margin-top:10px}.authBox .row button{flex:1}.status{font-size:12px;color:#bfc3dc;min-height:18px;margin-top:8px}.userPanel{display:none;position:absolute;right:5vw;top:64px;background:#11142f;border:1px solid #ffffff1c;border-radius:16px;padding:12px;z-index:30;width:260px}.userPanel button{width:100%;margin-top:8px}.close{float:right;background:none;border:0;color:#aaa;font-size:20px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<div class="logo"><div class="logoHeart">♥</div><span>CONEXIÓN</span></div>
+<nav><button>Descubre</button><button>Momentos</button><button>Círculos</button><button>Chats</button></nav>
+<button class="account ghost" id="accountBtn" style="margin:0">Entrar <div class="mini">A</div></button><div class="userPanel" id="userPanel"><b id="userName">Usuario</b><div class="muted" id="userEmail"></div><button class="view" id="logoutBtn">Cerrar sesión</button></div>
+</header>
+
+<section class="hero">
+<div>
+<h1><span class="gradientText">Entre millones,</span><br>una sola conexión. ❤️</h1>
+<p class="slogan">Amor · Amistad · Viajes · Cultura · Personas de todo el mundo</p>
+<p>Descubre personas compatibles, comparte lo que te apasiona y encuentra conexiones que pueden convertirse en algo especial.</p>
+<button class="cta" id="discoverBtn">✨ Empezar a descubrir</button>
+<button class="ghost" onclick="document.getElementById('premium').scrollIntoView({behavior:'smooth'})">💎 Ver Premium</button>
+</div>
+<div class="globeHeart"><div class="orbit"></div><div class="orbit two"></div><div class="globe"></div><div class="bigHeart">♥</div><div class="worldDots"><i class="dot a"></i><i class="dot b"></i><i class="dot c"></i><i class="dot d"></i></div></div>
+</section>
+
+<section class="section">
+<h2>Encuentra tu conexión por lo que amas</h2><div class="subtitle">Intereses que unen personas de todo el mundo.</div>
+<div class="categories">
+<div class="cat"><div class="icon c1">♥</div><b>Amor</b></div><div class="cat"><div class="icon c2">👥</div><b>Amistad</b></div><div class="cat"><div class="icon c3">✈️</div><b>Viajes</b></div><div class="cat"><div class="icon c4">🎵</div><b>Música</b></div><div class="cat"><div class="icon c5">💪</div><b>Deportes</b></div><div class="cat"><div class="icon c6">🎮</div><b>Juegos</b></div><div class="cat"><div class="icon c7">📸</div><b>Cultura</b></div><div class="cat"><div class="icon c8">🐾</div><b>Mascotas</b></div>
+</div>
+</section>
+
+<section class="section" id="discover">
+<h2>🌎 Descubre</h2><div class="subtitle">Personas compatibles cerca de ti o al otro lado del mundo.</div>
+<div class="discover">
+<div class="cards">
+<div class="card"><div class="photo" style="background:linear-gradient(135deg,#ff4f8d,#7047e8)">🌊<span class="badge">88% ❤️</span></div><div class="cardBody"><h3>Lucía, 27</h3><div class="muted">🇪🇸 España · 🇪🇺 Europa</div><div class="chips"><span>✈️ Viajes</span><span>🎵 Música</span><span>🐶 Animales</span></div><div class="actions"><button class="like" onclick="alert('❤️ Conexión enviada a Lucía')">❤️ Conectar</button><button class="view">Ver</button></div></div></div>
+<div class="card"><div class="photo" style="background:linear-gradient(135deg,#ff7a55,#ffc43d)">✈️<span class="badge">91% ❤️</span></div><div class="cardBody"><h3>Daniel, 30</h3><div class="muted">🇲🇽 México · 🌎 América</div><div class="chips"><span>🌎 Viajes</span><span>⚽ Deporte</span><span>🍳 Cocina</span></div><div class="actions"><button class="like" onclick="alert('❤️ Conexión enviada a Daniel')">❤️ Conectar</button><button class="view">Ver</button></div></div></div>
+<div class="card"><div class="photo" style="background:linear-gradient(135deg,#ffc84b,#ef5f9e)">🎵<span class="badge">89% ❤️</span></div><div class="cardBody"><h3>Mei, 26</h3><div class="muted">🇯🇵 Japón · 🌏 Asia</div><div class="chips"><span>🎵 Música</span><span>🎨 Arte</span><span>📚 Libros</span></div><div class="actions"><button class="like" onclick="alert('❤️ Conexión enviada a Mei')">❤️ Conectar</button><button class="view">Ver</button></div></div></div>
+</div>
+<div class="sideCard"><h3>❤️ Tu compatibilidad</h3><div class="score"><strong>88%</strong><small>¡Gran conexión!</small></div><p>Intereses en común <b>95%</b></p><p>Viajes y estilo de vida <b>88%</b></p><p>Música y ocio <b>78%</b></p><button class="ghost" style="margin:5px 0 0;width:100%" onclick="alert('Demo: cuestionario de compatibilidad')">Hacer mi test</button></div>
+</div>
+</section>
+
+<section class="section">
+<h2>🌍 Explora el mundo</h2><div class="subtitle">Conecta por continente, país o ciudad.</div>
+<div class="world">
+<div class="continent eu"><h3>🇪🇺 Europa</h3><p>España · Francia · Italia · Alemania · Portugal...</p></div>
+<div class="continent am"><h3>🌎 América</h3><p>México · Argentina · Brasil · Canadá · Colombia...</p></div>
+<div class="continent as"><h3>🌏 Asia</h3><p>Japón · Corea · India · Tailandia · Singapur...</p></div>
+<div class="continent af"><h3>🌍 África</h3><p>Marruecos · Sudáfrica · Egipto · Kenia...</p></div>
+<div class="continent oc"><h3>🌊 Oceanía</h3><p>Australia · Nueva Zelanda · Fiji...</p></div>
+<div class="continent" style="color:#cbd5ff"><h3>🧊 Antártida</h3><p>Una conexión para cada rincón del mundo.</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2>✨ Momentos</h2><div class="subtitle">Conoce personas por lo que comparten.</div>
+<div class="moments">
+<div class="moment"><strong>✨ Lucía 🇪🇸</strong><p>“Mi lugar favorito para desconectar del mundo 🌊”</p><span>❤️ 24 · 💬 6</span></div>
+<div class="moment"><strong>✈️ Daniel 🇲🇽</strong><p>“Este año quiero conocer tres países nuevos.”</p><span>❤️ 41 · 💬 12</span></div>
+<div class="moment"><strong>🎵 Mei 🇯🇵</strong><p>“¿Qué canción no puedes dejar de escuchar?”</p><span>❤️ 58 · 💬 19</span></div>
+</div>
+</section>
+
+<section class="section" id="premium">
+<div class="premium"><div><h2>👑 CONEXIÓN Premium</h2><div class="price">4,99 € <small style="font-size:14px">/ mes</small></div><ul><li>Ver quién está interesado en ti</li><li>Filtros avanzados y conexiones internacionales</li><li>Traducción de mensajes</li><li>Perfil destacado y conexión del día</li></ul></div><button onclick="alert('Demo: aquí conectaremos Stripe y la suscripción real.')">Hazte Premium ❤️</button></div>
+</section>
+
+<footer>CONEXIÓN ❤️ · Entre millones, una sola conexión. · Amor · Amistad · Viajes · Cultura · Tú decides.</footer>
+</div>
+</body>
+</html>
+<script>
+const SUPABASE_URL='https://tqismpzgsjijcvrevqvn.supabase.co';
+const SUPABASE_KEY='sb_publishable_2rd7sRvtud9DkiaTV0a1Jw_lTDQhG0R';
+const db=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+const modal=document.getElementById('authModal'), statusEl=document.getElementById('authStatus');
+function openAuth(){modal.style.display='flex'} function closeAuth(){modal.style.display='none';statusEl.textContent=''}
+document.getElementById('accountBtn').onclick=()=>{const p=document.getElementById('userPanel'); p.style.display=p.style.display==='block'?'none':'block'};
+document.getElementById('closeAuth').onclick=closeAuth;
+document.getElementById('discoverBtn').onclick=()=>document.getElementById('discover').scrollIntoView({behavior:'smooth'});
+document.getElementById('signupBtn').onclick=async()=>{const email=authEmail.value.trim(),password=authPassword.value,name=authName.value.trim(); if(!email||password.length<6||!name){statusEl.textContent='Completa nombre, correo y contraseña (6+ caracteres).';return} statusEl.textContent='Creando cuenta…'; const {data,error}=await db.auth.signUp({email,password,options:{data:{name}}}); if(error){statusEl.textContent=error.message;return} statusEl.textContent=data.session?'Cuenta creada.':'Cuenta creada. Revisa tu correo para confirmar.'};
+document.getElementById('loginBtn').onclick=async()=>{const email=authEmail.value.trim(),password=authPassword.value; statusEl.textContent='Entrando…'; const {error}=await db.auth.signInWithPassword({email,password}); statusEl.textContent=error?error.message:'¡Bienvenido a CONEXIÓN!'; if(!error) setTimeout(closeAuth,500)};
+document.getElementById('logoutBtn').onclick=async()=>{await db.auth.signOut();document.getElementById('userPanel').style.display='none';refreshAuth()};
+async function refreshAuth(){const {data}=await db.auth.getUser();const u=data.user; const btn=document.getElementById('accountBtn'); if(u){btn.innerHTML='<span>Mi cuenta</span><div class="mini">'+((u.user_metadata?.name||u.email||'U')[0].toUpperCase())+'</div>';document.getElementById('userName').textContent=u.user_metadata?.name||'Usuario';document.getElementById('userEmail').textContent=u.email||'';document.getElementById('userPanel').style.display='block'}else{btn.innerHTML='<span>Entrar</span><div class="mini">A</div>';document.getElementById('userPanel').style.display='none'}}
+db.auth.onAuthStateChange(()=>refreshAuth()); refreshAuth();
+</script>

@@ -1,0 +1,1 @@
+CONEXIÓN v3 — diseño inspirado directamente en la identidad visual acordada. Abre index.html.
