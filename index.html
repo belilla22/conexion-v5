@@ -2,134 +2,135 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CONEXIÓN ❤️ — Entre millones, una sola conexión</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>CONEXIÓN</title>
 <style>
+:root{
+  --bg:#100c2b; --bg2:#1a1640; --card:#211c48; --line:#ffffff18;
+  --pink:#ff2e83; --orange:#ff9a3d; --cyan:#22c8df; --green:#2bd18a; --purple:#7656ef;
+  --text:#fff; --muted:#bcb9d0;
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#06091c;color:#fff}
-button{font:inherit}
-.page{min-height:100vh;background:
-radial-gradient(circle at 10% 18%,#ff1f7827,transparent 28%),
-radial-gradient(circle at 92% 15%,#1dbbe92b,transparent 25%),
-radial-gradient(circle at 50% 88%,#ff8b2622,transparent 30%),
-linear-gradient(135deg,#050817,#100d35 46%,#071d37)}
-header{height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid #ffffff16;background:#050817b8;backdrop-filter:blur(16px);position:sticky;top:0;z-index:20}
-.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:25px;letter-spacing:-1px}
-.logoHeart{width:42px;height:42px;display:grid;place-items:center;border-radius:15px;background:conic-gradient(from 220deg,#ff277d,#ffb02f,#25c98b,#20c7e8,#7655ef,#ff277d);box-shadow:0 0 28px #ff277d55;font-size:24px}
-nav{display:flex;gap:8px}nav button{background:transparent;border:0;color:#cfd1e5;padding:9px 12px;border-radius:10px;cursor:pointer}nav button:hover{background:#ffffff0d;color:#fff}
-.account{display:flex;align-items:center;gap:10px}.mini{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#ff3b88,#7054e9);font-weight:800}
-.hero{padding:70px 6vw 45px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;max-width:1400px;margin:auto}
-.hero h1{font-size:64px;line-height:.98;margin:0 0 18px;letter-spacing:-3px}
-.gradientText{background:linear-gradient(90deg,#ff3c86,#ffb23e,#26d19a,#27c7ef,#8b6cff);-webkit-background-clip:text;color:transparent}
-.hero p{font-size:18px;color:#c5c7da;max-width:650px;line-height:1.6}.slogan{font-size:20px!important;color:#fff!important;font-weight:700}
-.cta{border:0;border-radius:14px;padding:14px 21px;color:#fff;font-weight:900;background:linear-gradient(90deg,#ff267d,#ff833b);box-shadow:0 12px 32px #ff267d3b;cursor:pointer}
-.ghost{margin-left:8px;border:1px solid #ffffff22;border-radius:14px;padding:14px 20px;background:#ffffff08;color:#fff;cursor:pointer}
-.globeHeart{height:360px;display:grid;place-items:center;position:relative}
-.globe{width:270px;height:270px;border-radius:50%;background:
-radial-gradient(circle at 34% 30%,#7df0ff 0 3%,transparent 4%),
-radial-gradient(circle at 65% 35%,#ffd457 0 4%,transparent 5%),
-radial-gradient(circle at 47% 68%,#35d78c 0 6%,transparent 7%),
-linear-gradient(145deg,#20c7ef,#7055eb 48%,#ff3b86);box-shadow:0 0 90px #7047e866, inset -30px -35px 70px #080a25;position:relative}
-.globe:before{content:"";position:absolute;inset:15px;border-radius:50%;border:1px solid #ffffff38;box-shadow:inset 25px 0 #ffffff0a}
-.bigHeart{position:absolute;font-size:190px;line-height:1;color:#ff4b91;text-shadow:0 0 30px #ff2f7d99;filter:drop-shadow(0 15px 25px #0008)}
-.orbit{position:absolute;width:370px;height:135px;border:3px solid #ff3c86aa;border-radius:50%;transform:rotate(-20deg)}.orbit.two{border-color:#28c9e5aa;transform:rotate(20deg)}
-.worldDots{position:absolute;inset:0}.dot{position:absolute;width:13px;height:13px;border-radius:50%;box-shadow:0 0 18px currentColor}
-.dot.a{left:10%;top:25%;color:#ff4c86;background:#ff4c86}.dot.b{right:9%;top:31%;color:#25c9e9;background:#25c9e9}.dot.c{left:21%;bottom:17%;color:#ffbd43;background:#ffbd43}.dot.d{right:20%;bottom:21%;color:#36d38d;background:#36d38d}
-.section{max-width:1400px;margin:auto;padding:28px 6vw 62px}.section h2{font-size:30px;margin:0 0 20px}.subtitle{color:#aeb0c6;margin-top:-10px;margin-bottom:24px}
-.categories{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}.cat{padding:16px 8px;border-radius:18px;text-align:center;border:1px solid #ffffff14;background:#ffffff08}.cat .icon{width:54px;height:54px;margin:0 auto 9px;border-radius:50%;display:grid;place-items:center;font-size:25px}.cat b{font-size:12px}.c1{background:#ff397f}.c2{background:#38bdf0}.c3{background:#27ca87}.c4{background:#ef4fa1}.c5{background:#ffb52f}.c6{background:#7a57ef}.c7{background:#ff9b2e}.c8{background:#1ec7d6}
-.discover{display:grid;grid-template-columns:1.4fr .6fr;gap:20px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border-radius:22px;overflow:hidden;background:#ffffff0b;border:1px solid #ffffff14}.photo{height:235px;display:grid;place-items:center;font-size:78px;position:relative}.badge{position:absolute;right:12px;top:12px;background:#07091dcc;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:900}.cardBody{padding:15px}.cardBody h3{margin:0;font-size:19px}.muted{color:#aeb0c4;font-size:12px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.chips span{background:#ffffff0d;border:1px solid #ffffff0c;border-radius:999px;padding:5px 8px;font-size:11px}.actions{display:flex;gap:7px}.actions button{flex:1;border:0;border-radius:10px;padding:10px;cursor:pointer;font-weight:800}.like{background:linear-gradient(90deg,#ff287e,#ff784a);color:#fff}.view{background:#ffffff0e;color:#fff}
-.sideCard{border-radius:22px;padding:22px;background:linear-gradient(145deg,#ff267d1c,#7054e91e);border:1px solid #ffffff16}.score{width:150px;height:150px;margin:20px auto;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#ff3d88 0 88%,#ffffff12 88%);position:relative}.score:after{content:"";position:absolute;inset:11px;border-radius:50%;background:#111034}.score strong{position:relative;z-index:1;font-size:32px}.score small{position:absolute;z-index:1;transform:translateY(30px);color:#bbbdd2}
-.world{display:grid;grid-template-columns:1fr 1fr;gap:18px}.continent{padding:20px;border-radius:20px;min-height:150px;border:1px solid #ffffff14;position:relative;overflow:hidden}.continent:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-55px;top:-70px;background:currentColor;opacity:.12}.eu{color:#39a9ff}.am{color:#ff657f}.as{color:#ffc84b}.af{color:#3bd58e}.oc{color:#2bc9e8}
-.moments{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.moment{border-radius:20px;padding:18px;background:#ffffff09;border:1px solid #ffffff14}.moment strong{display:block;margin-bottom:7px}.moment p{color:#c3c5d7;line-height:1.45}
-.premium{padding:34px;border-radius:26px;background:linear-gradient(110deg,#ff287d25,#7054e936,#1fc7e51c);border:1px solid #ffffff17;display:flex;justify-content:space-between;gap:25px;align-items:center}.premium h2{margin:0 0 8px}.price{font-size:36px;font-weight:900;background:linear-gradient(90deg,#ff4b91,#ffbd43);-webkit-background-clip:text;color:transparent}.premium ul{margin:12px 0 0;padding-left:20px;color:#c7c9d9;line-height:1.7}.premium button{border:0;border-radius:13px;padding:14px 20px;background:linear-gradient(90deg,#ff267d,#ff8a38);color:#fff;font-weight:900;cursor:pointer;white-space:nowrap}
-footer{padding:35px 6vw;color:#888ba4;text-align:center;border-top:1px solid #ffffff0d}
-@media(max-width:1000px){.hero{grid-template-columns:1fr}.categories{grid-template-columns:repeat(4,1fr)}.discover{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}}
-@media(max-width:620px){header{padding:0 18px}nav{display:none}.hero{padding:45px 20px 25px}.hero h1{font-size:43px}.section{padding:25px 20px 45px}.categories{grid-template-columns:repeat(2,1fr)}.cards,.moments,.world{grid-template-columns:1fr}.globeHeart{height:300px}.globe{width:210px;height:210px}.bigHeart{font-size:150px}.orbit{width:290px}}
-</style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<style>
-.authModal{position:fixed;inset:0;background:#050817d9;backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;z-index:99;padding:20px}.authBox{width:min(430px,100%);background:#11142f;border:1px solid #ffffff1c;border-radius:24px;padding:26px;box-shadow:0 25px 80px #0009}.authBox h2{margin-top:0}.authBox input{width:100%;padding:13px 14px;margin:7px 0;border-radius:12px;border:1px solid #ffffff18;background:#ffffff0a;color:#fff;outline:none}.authBox .row{display:flex;gap:8px;margin-top:10px}.authBox .row button{flex:1}.status{font-size:12px;color:#bfc3dc;min-height:18px;margin-top:8px}.userPanel{display:none;position:absolute;right:5vw;top:64px;background:#11142f;border:1px solid #ffffff1c;border-radius:16px;padding:12px;z-index:30;width:260px}.userPanel button{width:100%;margin-top:8px}.close{float:right;background:none;border:0;color:#aaa;font-size:20px;cursor:pointer}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+button{font:inherit;cursor:pointer}
+.app{min-height:100vh;background:
+ radial-gradient(circle at 15% 5%,#2a1c54 0,transparent 27%),
+ radial-gradient(circle at 90% 40%,#17143b 0,transparent 35%),
+ linear-gradient(180deg,#100c2b,#1a1640 70%,#100c2b)}
+header{position:sticky;top:0;z-index:20;height:82px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;background:#0c0a22f0;border-bottom:1px solid #ffffff0c;backdrop-filter:blur(16px)}
+.brand{display:flex;align-items:center;gap:13px;font-size:30px;font-weight:900;letter-spacing:-1px}
+.logo{width:54px;height:54px;border-radius:17px;display:grid;place-items:center;font-size:34px;color:#fff;background:linear-gradient(135deg,#ff3d7e,#ff8d42 35%,#27d38c 58%,#25c6df 77%,#7655ed);box-shadow:0 0 26px #ff3d7e45}
+.user{display:flex;align-items:center;gap:10px;font-size:21px}.avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:linear-gradient(135deg,#d74fa8,#7656ef)}
+main{max-width:980px;margin:auto;padding:34px 24px 80px}
+.hero{min-height:650px;display:flex;flex-direction:column;justify-content:center;padding:45px 0}
+.hero h1{font-size:clamp(48px,8vw,76px);line-height:.98;letter-spacing:-3px;margin:0 0 25px;font-weight:900}
+.gradient{background:linear-gradient(90deg,#ff408b,#f8bd37,#24d190,#2bc8df,#7a60f0);-webkit-background-clip:text;color:transparent}
+.hero .redheart{color:#ff3e42;text-shadow:0 5px 0 #b72832;font-size:.82em;margin-left:12px}
+.hero .lead{font-size:24px;line-height:1.45;font-weight:800;max-width:760px;margin:0 0 25px}
+.hero .desc{font-size:20px;line-height:1.65;color:#c4c1d3;max-width:780px}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:64px;padding:0 30px;border:0;border-radius:18px;color:#fff;font-weight:900;font-size:21px;background:linear-gradient(90deg,#ff237d,#ff9840);box-shadow:0 14px 35px #ff2e8340}
+.secondary{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 28px;margin-left:8px;border:1px solid #ffffff20;border-radius:18px;color:#fff;background:#ffffff08;font-size:20px}
+.globeWrap{height:520px;display:grid;place-items:center;position:relative}
+.orbit{position:absolute;width:82%;max-width:620px;height:210px;border:5px solid #23c9e8a8;border-radius:50%;transform:rotate(8deg)}
+.orbit.two{border-color:#ff3b91aa;transform:rotate(-11deg)}
+.dot{position:absolute;width:22px;height:22px;border-radius:50%;box-shadow:0 0 20px currentColor}.d1{background:#ff3b91;color:#ff3b91;left:15%;top:27%}.d2{background:#24c8e4;color:#24c8e4;right:12%;top:30%}.d3{background:#2bd18a;color:#2bd18a;left:27%;bottom:15%}.d4{background:#ffbd38;color:#ffbd38;right:28%;bottom:9%}
+.globe{width:min(360px,72vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#3b8fe7,#2d67cf 30%,#1c1650 73%);box-shadow:0 0 65px #3d68e755,inset -30px -25px 50px #0a0825;position:relative;display:grid;place-items:center}
+.globe:before{content:"";position:absolute;inset:18px;border:2px solid #ffffff20;border-radius:50%}
+.globe .heart{font-size:155px;color:#ff3e88;text-shadow:0 0 25px #ff3e8870}
+.section{padding:55px 0}.section h2{font-size:42px;margin:0 0 8px}.section .sub{font-size:18px;color:var(--muted);margin:0 0 28px}
+.categoryGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.category{min-height:220px;border:1px solid #ffffff14;border-radius:26px;background:#ffffff06;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:inset 0 1px #ffffff08}
+.catIcon{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;font-size:48px;margin-bottom:18px}
+.category h3{font-size:23px;margin:0}
+.c1{background:#ff347d}.c2{background:#29b9e8}.c3{background:#2bd18a}.c4{background:#eb4e9d}.c5{background:#ffb42c}.c6{background:#7656ed}.c7{background:#ff8d35}.c8{background:#27c0d3}
+.profiles{display:grid;gap:28px}
+.profile{border:1px solid #ffffff17;border-radius:28px;overflow:hidden;background:#18143a;box-shadow:0 20px 45px #0003}
+.profileTop{height:510px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.p1{background:linear-gradient(135deg,#ff8656,#ffc63f)}.p2{background:linear-gradient(135deg,#ffc34b,#ef789a)}.p3{background:linear-gradient(135deg,#4ac8d9,#7459e9)}
+.profileTop .bigIcon{font-size:150px;filter:drop-shadow(0 12px 9px #0002)}
+.match{position:absolute;right:18px;top:18px;background:#2a2331;color:#fff;border-radius:999px;padding:12px 18px;font-weight:900;font-size:20px}.match b{color:#ff3d4d}
+.profileBody{padding:25px 28px 28px}.profileBody h3{font-size:36px;margin:0 0 4px}.meta{font-size:20px;color:#c3c0d2;margin-bottom:20px}.tags{display:flex;gap:10px;flex-wrap:wrap}.tag{padding:10px 16px;border-radius:999px;background:#2a254d;border:1px solid #ffffff0c;font-size:18px}.profileActions{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.connect,.view{height:64px;border:0;border-radius:18px;font-size:22px;font-weight:900}.connect{color:#fff;background:linear-gradient(90deg,#ff2380,#ff9a3e)}.view{color:#fff;background:#2a254d}
+.moments{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.moment{min-height:260px;border-radius:24px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid #ffffff14}.m1{background:linear-gradient(145deg,#ff3c80,#7656ee)}.m2{background:linear-gradient(145deg,#22c8df,#2b73d4)}.m3{background:linear-gradient(145deg,#ffb43c,#ee5b83)}.moment h3{margin:0;font-size:21px}.moment p{font-size:20px;line-height:1.4;margin:0}
+.premium{border:1px solid #ffffff18;border-radius:28px;padding:30px;background:linear-gradient(135deg,#211844,#25184a 50%,#172c58);display:flex;align-items:center;justify-content:space-between;gap:25px}.premium h2{font-size:36px;margin:0 0 8px}.premium .price{font-size:42px;font-weight:900}.premium ul{color:#c6c3d4;line-height:1.8;font-size:18px}.premium button{min-height:58px;border:0;border-radius:16px;padding:0 24px;font-weight:900;background:linear-gradient(90deg,#ff2f80,#ff9b3e);color:#fff;font-size:18px}
+.toast{position:fixed;inset:0;background:#070516cc;display:none;place-items:center;z-index:40;padding:20px}.toast.open{display:grid}.matchbox{width:min(560px,100%);text-align:center;border-radius:28px;padding:38px;background:linear-gradient(180deg,#281b52,#171334);border:1px solid #ffffff18;box-shadow:0 30px 90px #0008}.matchbox .heartbig{font-size:100px;color:#ff3e86}.matchbox h2{font-size:42px;margin:0 0 8px}.matchbox p{color:#c7c4d4;font-size:19px}
+@media(max-width:700px){header{height:72px;padding:0 14px}.brand{font-size:25px}.logo{width:48px;height:48px}.user span{display:none}main{padding:18px 16px 60px}.hero{padding:25px 0;min-height:0}.hero h1{font-size:50px}.hero .lead{font-size:20px}.hero .desc{font-size:17px}.cta,.secondary{width:100%;margin:8px 0 0}.globeWrap{height:360px}.orbit{width:95%;height:145px}.profileTop{height:360px}.profileTop .bigIcon{font-size:110px}.profileBody h3{font-size:30px}.meta{font-size:17px}.tag{font-size:15px;padding:9px 12px}.categoryGrid{gap:12px}.category{min-height:180px}.catIcon{width:74px;height:74px;font-size:38px}.category h3{font-size:19px}.moments{grid-template-columns:1fr}.premium{display:block}.premium button{width:100%}}
 </style>
 </head>
 <body>
-<div class="page">
+<div class="app">
 <header>
-<div class="logo"><div class="logoHeart">♥</div><span>CONEXIÓN</span></div>
-<nav><button>Descubre</button><button>Momentos</button><button>Círculos</button><button>Chats</button></nav>
-<button class="account ghost" id="accountBtn" style="margin:0">Entrar <div class="mini">A</div></button><div class="userPanel" id="userPanel"><b id="userName">Usuario</b><div class="muted" id="userEmail"></div><button class="view" id="logoutBtn">Cerrar sesión</button></div>
+  <div class="brand"><div class="logo">♥</div>CONEXIÓN</div>
+  <div class="user"><span>Francis</span><div class="avatar">F</div></div>
 </header>
-
+<main>
 <section class="hero">
-<div>
-<h1><span class="gradientText">Entre millones,</span><br>una sola conexión. ❤️</h1>
-<p class="slogan">Amor · Amistad · Viajes · Cultura · Personas de todo el mundo</p>
-<p>Descubre personas compatibles, comparte lo que te apasiona y encuentra conexiones que pueden convertirse en algo especial.</p>
-<button class="cta" id="discoverBtn">✨ Empezar a descubrir</button>
-<button class="ghost" onclick="document.getElementById('premium').scrollIntoView({behavior:'smooth'})">💎 Ver Premium</button>
-</div>
-<div class="globeHeart"><div class="orbit"></div><div class="orbit two"></div><div class="globe"></div><div class="bigHeart">♥</div><div class="worldDots"><i class="dot a"></i><i class="dot b"></i><i class="dot c"></i><i class="dot d"></i></div></div>
+  <h1><span class="gradient">Entre millones,</span><br>una sola<br>conexión.<span class="redheart">❤️</span></h1>
+  <p class="lead">Amor · Amistad · Viajes · Cultura · Personas de todo el mundo</p>
+  <p class="desc">Descubre personas compatibles, comparte lo que te apasiona y encuentra conexiones que pueden convertirse en algo especial.</p>
+  <div><button class="cta" onclick="document.getElementById('descubre').scrollIntoView()">✨ Empezar a descubrir</button><button class="secondary" onclick="document.getElementById('premium').scrollIntoView()">💎 Ver Premium</button></div>
+</section>
+
+<section class="globeWrap">
+  <div class="orbit"></div><div class="orbit two"></div>
+  <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
+  <div class="globe"><div class="heart">♥</div></div>
 </section>
 
 <section class="section">
-<h2>Encuentra tu conexión por lo que amas</h2><div class="subtitle">Intereses que unen personas de todo el mundo.</div>
-<div class="categories">
-<div class="cat"><div class="icon c1">♥</div><b>Amor</b></div><div class="cat"><div class="icon c2">👥</div><b>Amistad</b></div><div class="cat"><div class="icon c3">✈️</div><b>Viajes</b></div><div class="cat"><div class="icon c4">🎵</div><b>Música</b></div><div class="cat"><div class="icon c5">💪</div><b>Deportes</b></div><div class="cat"><div class="icon c6">🎮</div><b>Juegos</b></div><div class="cat"><div class="icon c7">📸</div><b>Cultura</b></div><div class="cat"><div class="icon c8">🐾</div><b>Mascotas</b></div>
-</div>
+  <h2>Encuentra tu conexión por lo que amas</h2>
+  <p class="sub">Intereses que unen a personas de todo el mundo.</p>
+  <div class="categoryGrid">
+    <div class="category"><div class="catIcon c1">♥</div><h3>Amor</h3></div>
+    <div class="category"><div class="catIcon c2">👥</div><h3>Amistad</h3></div>
+    <div class="category"><div class="catIcon c3">✈️</div><h3>Viajes</h3></div>
+    <div class="category"><div class="catIcon c4">🎵</div><h3>Música</h3></div>
+    <div class="category"><div class="catIcon c5">💪</div><h3>Deportes</h3></div>
+    <div class="category"><div class="catIcon c6">🎮</div><h3>Juegos</h3></div>
+    <div class="category"><div class="catIcon c7">📸</div><h3>Cultura</h3></div>
+    <div class="category"><div class="catIcon c8">🐾</div><h3>Mascotas</h3></div>
+  </div>
 </section>
 
-<section class="section" id="discover">
-<h2>🌎 Descubre</h2><div class="subtitle">Personas compatibles cerca de ti o al otro lado del mundo.</div>
-<div class="discover">
-<div class="cards">
-<div class="card"><div class="photo" style="background:linear-gradient(135deg,#ff4f8d,#7047e8)">🌊<span class="badge">88% ❤️</span></div><div class="cardBody"><h3>Lucía, 27</h3><div class="muted">🇪🇸 España · 🇪🇺 Europa</div><div class="chips"><span>✈️ Viajes</span><span>🎵 Música</span><span>🐶 Animales</span></div><div class="actions"><button class="like" onclick="alert('❤️ Conexión enviada a Lucía')">❤️ Conectar</button><button class="view">Ver</button></div></div></div>
-<div class="card"><div class="photo" style="background:linear-gradient(135deg,#ff7a55,#ffc43d)">✈️<span class="badge">91% ❤️</span></div><div class="cardBody"><h3>Daniel, 30</h3><div class="muted">🇲🇽 México · 🌎 América</div><div class="chips"><span>🌎 Viajes</span><span>⚽ Deporte</span><span>🍳 Cocina</span></div><div class="actions"><button class="like" onclick="alert('❤️ Conexión enviada a Daniel')">❤️ Conectar</button><button class="view">Ver</button></div></div></div>
-<div class="card"><div class="photo" style="background:linear-gradient(135deg,#ffc84b,#ef5f9e)">🎵<span class="badge">89% ❤️</span></div><div class="cardBody"><h3>Mei, 26</h3><div class="muted">🇯🇵 Japón · 🌏 Asia</div><div class="chips"><span>🎵 Música</span><span>🎨 Arte</span><span>📚 Libros</span></div><div class="actions"><button class="like" onclick="alert('❤️ Conexión enviada a Mei')">❤️ Conectar</button><button class="view">Ver</button></div></div></div>
-</div>
-<div class="sideCard"><h3>❤️ Tu compatibilidad</h3><div class="score"><strong>88%</strong><small>¡Gran conexión!</small></div><p>Intereses en común <b>95%</b></p><p>Viajes y estilo de vida <b>88%</b></p><p>Música y ocio <b>78%</b></p><button class="ghost" style="margin:5px 0 0;width:100%" onclick="alert('Demo: cuestionario de compatibilidad')">Hacer mi test</button></div>
-</div>
+<section class="section" id="descubre">
+  <h2>🌎 Descubre</h2><p class="sub">Personas compatibles de distintos lugares del mundo.</p>
+  <div class="profiles">
+    <article class="profile">
+      <div class="profileTop p1"><div class="bigIcon">✈️</div><div class="match">91% <b>❤️</b></div></div>
+      <div class="profileBody"><h3>Daniel, 30</h3><div class="meta">🇲🇽 México · 🌎 América</div><div class="tags"><span class="tag">🌎 Viajes</span><span class="tag">⚽ Deporte</span><span class="tag">🍳 Cocina</span></div><div class="profileActions"><button class="connect" onclick="openMatch('Daniel')">❤️ Conectar</button><button class="view">Ver</button></div></div>
+    </article>
+    <article class="profile">
+      <div class="profileTop p2"><div class="bigIcon">🎵</div><div class="match">89% <b>❤️</b></div></div>
+      <div class="profileBody"><h3>Mei, 26</h3><div class="meta">🇯🇵 Japón · 🌏 Asia</div><div class="tags"><span class="tag">🎵 Música</span><span class="tag">🎨 Cultura</span><span class="tag">📚 Libros</span></div><div class="profileActions"><button class="connect" onclick="openMatch('Mei')">❤️ Conectar</button><button class="view">Ver</button></div></div>
+    </article>
+    <article class="profile">
+      <div class="profileTop p3"><div class="bigIcon">📸</div><div class="match">88% <b>❤️</b></div></div>
+      <div class="profileBody"><h3>Sofía, 28</h3><div class="meta">🇪🇸 España · 🇪🇺 Europa</div><div class="tags"><span class="tag">📸 Cultura</span><span class="tag">🐾 Mascotas</span><span class="tag">✈️ Viajes</span></div><div class="profileActions"><button class="connect" onclick="openMatch('Sofía')">❤️ Conectar</button><button class="view">Ver</button></div></div>
+    </article>
+  </div>
 </section>
 
 <section class="section">
-<h2>🌍 Explora el mundo</h2><div class="subtitle">Conecta por continente, país o ciudad.</div>
-<div class="world">
-<div class="continent eu"><h3>🇪🇺 Europa</h3><p>España · Francia · Italia · Alemania · Portugal...</p></div>
-<div class="continent am"><h3>🌎 América</h3><p>México · Argentina · Brasil · Canadá · Colombia...</p></div>
-<div class="continent as"><h3>🌏 Asia</h3><p>Japón · Corea · India · Tailandia · Singapur...</p></div>
-<div class="continent af"><h3>🌍 África</h3><p>Marruecos · Sudáfrica · Egipto · Kenia...</p></div>
-<div class="continent oc"><h3>🌊 Oceanía</h3><p>Australia · Nueva Zelanda · Fiji...</p></div>
-<div class="continent" style="color:#cbd5ff"><h3>🧊 Antártida</h3><p>Una conexión para cada rincón del mundo.</p></div>
-</div>
-</section>
-
-<section class="section">
-<h2>✨ Momentos</h2><div class="subtitle">Conoce personas por lo que comparten.</div>
-<div class="moments">
-<div class="moment"><strong>✨ Lucía 🇪🇸</strong><p>“Mi lugar favorito para desconectar del mundo 🌊”</p><span>❤️ 24 · 💬 6</span></div>
-<div class="moment"><strong>✈️ Daniel 🇲🇽</strong><p>“Este año quiero conocer tres países nuevos.”</p><span>❤️ 41 · 💬 12</span></div>
-<div class="moment"><strong>🎵 Mei 🇯🇵</strong><p>“¿Qué canción no puedes dejar de escuchar?”</p><span>❤️ 58 · 💬 19</span></div>
-</div>
+  <h2>✨ Momentos</h2><p class="sub">Conoce a las personas por lo que comparten.</p>
+  <div class="moments">
+    <div class="moment m1"><h3>✨ Lucía 🇪🇸</h3><p>“Mi lugar favorito para desconectar del mundo 🌊”</p></div>
+    <div class="moment m2"><h3>✈️ Daniel 🇲🇽</h3><p>“Este año quiero conocer tres países nuevos.”</p></div>
+    <div class="moment m3"><h3>🎵 Mei 🇯🇵</h3><p>“¿Qué canción no puedes dejar de escuchar?”</p></div>
+  </div>
 </section>
 
 <section class="section" id="premium">
-<div class="premium"><div><h2>👑 CONEXIÓN Premium</h2><div class="price">4,99 € <small style="font-size:14px">/ mes</small></div><ul><li>Ver quién está interesado en ti</li><li>Filtros avanzados y conexiones internacionales</li><li>Traducción de mensajes</li><li>Perfil destacado y conexión del día</li></ul></div><button onclick="alert('Demo: aquí conectaremos Stripe y la suscripción real.')">Hazte Premium ❤️</button></div>
+  <div class="premium">
+    <div><h2>💎 CONEXIÓN Premium</h2><div class="price">4,99 € <small>/mes</small></div><ul><li>❤️ Ver quién te ha elegido</li><li>🌎 Explorar personas de todo el mundo</li><li>🔎 Filtros avanzados</li><li>💬 Traducción de mensajes</li><li>🚀 Perfil destacado</li></ul></div>
+    <button onclick="alert('Demo: aquí conectaremos el sistema de pagos.')">Activar Premium</button>
+  </div>
 </section>
-
-<footer>CONEXIÓN ❤️ · Entre millones, una sola conexión. · Amor · Amistad · Viajes · Cultura · Tú decides.</footer>
+</main>
 </div>
+
+<div class="toast" id="toast"><div class="matchbox"><div class="heartbig">♥</div><h2>¡Habéis conectado!</h2><p id="matchText"></p><p>Entre millones, una sola conexión.</p><button class="cta" onclick="document.getElementById('toast').classList.remove('open')">💬 Empezar a hablar</button></div></div>
+<script>
+function openMatch(name){document.getElementById('matchText').textContent='Francis ❤️ '+name+' · habéis encontrado una conexión que merece la pena descubrir.';document.getElementById('toast').classList.add('open')}
+</script>
 </body>
 </html>
-<script>
-const SUPABASE_URL='https://tqismpzgsjijcvrevqvn.supabase.co';
-const SUPABASE_KEY='sb_publishable_2rd7sRvtud9DkiaTV0a1Jw_lTDQhG0R';
-const db=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-const modal=document.getElementById('authModal'), statusEl=document.getElementById('authStatus');
-function openAuth(){modal.style.display='flex'} function closeAuth(){modal.style.display='none';statusEl.textContent=''}
-document.getElementById('accountBtn').onclick=()=>{const p=document.getElementById('userPanel'); p.style.display=p.style.display==='block'?'none':'block'};
-document.getElementById('closeAuth').onclick=closeAuth;
-document.getElementById('discoverBtn').onclick=()=>document.getElementById('discover').scrollIntoView({behavior:'smooth'});
-document.getElementById('signupBtn').onclick=async()=>{const email=authEmail.value.trim(),password=authPassword.value,name=authName.value.trim(); if(!email||password.length<6||!name){statusEl.textContent='Completa nombre, correo y contraseña (6+ caracteres).';return} statusEl.textContent='Creando cuenta…'; const {data,error}=await db.auth.signUp({email,password,options:{data:{name}}}); if(error){statusEl.textContent=error.message;return} statusEl.textContent=data.session?'Cuenta creada.':'Cuenta creada. Revisa tu correo para confirmar.'};
-document.getElementById('loginBtn').onclick=async()=>{const email=authEmail.value.trim(),password=authPassword.value; statusEl.textContent='Entrando…'; const {error}=await db.auth.signInWithPassword({email,password}); statusEl.textContent=error?error.message:'¡Bienvenido a CONEXIÓN!'; if(!error) setTimeout(closeAuth,500)};
-document.getElementById('logoutBtn').onclick=async()=>{await db.auth.signOut();document.getElementById('userPanel').style.display='none';refreshAuth()};
-async function refreshAuth(){const {data}=await db.auth.getUser();const u=data.user; const btn=document.getElementById('accountBtn'); if(u){btn.innerHTML='<span>Mi cuenta</span><div class="mini">'+((u.user_metadata?.name||u.email||'U')[0].toUpperCase())+'</div>';document.getElementById('userName').textContent=u.user_metadata?.name||'Usuario';document.getElementById('userEmail').textContent=u.email||'';document.getElementById('userPanel').style.display='block'}else{btn.innerHTML='<span>Entrar</span><div class="mini">A</div>';document.getElementById('userPanel').style.display='none'}}
-db.auth.onAuthStateChange(()=>refreshAuth()); refreshAuth();
-</script>
